@@ -34,25 +34,35 @@ git config --global user.email "seu-email@example.com"</code></pre>
 ```
 br.com.historico.historico
 ├── Application.java
-├── HistoricoApplication.java
 ├── model
 │   ├── request
 │   │   └── UserRequest.java
+│   │   └── WeaponRequest.java          
 │   └── response
 │       └── UserResponse.java
+│       └── WeaponResponse.java         
 ├── persistence
 │   ├── entity
 │   │   └── User.java
+│   │   └── Weapon.java                
 │   └── repository
 │       └── UserRepository.java
+│       └── WeaponRepository.java       
 ├── service
 │   ├── Mapper.java
-│   ├── UserRequestMapper.java
-│   ├── UserResponseMapper.java
-│   ├── UserService.java
+│   └── UserRequestMapper.java
+│   └── UserResponseMapper.java
+│   └── WeaponRequestMapper.java        
+│   └── WeaponResponseMapper.java      
 │   └── UserServiceImpl.java
+│   └── WeaponServiceImpl.java          
+│   └── UserService.java
+│   └── WeaponService.java              
 └── ws.historico
     └── UserController.java
+    └── WeaponController.java           
+└── HistoricoApplication.java
+
 
 
 ```
