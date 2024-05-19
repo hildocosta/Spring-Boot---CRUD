@@ -52,18 +52,28 @@ public class WeaponServiceImpl implements WeaponService {
         LOGGER.info("Atualizando a arma");
         notNull(id, "ID Invalido");
 
-        Weapon weaponUpdate = this.requestWeaponMapper.map((weaponRequest));
-
         return weaponRepository.findById(id)
                 .map(weapon -> {
 
-                    weapon.setSituacao((weaponUpdate.getSituacao()));
+                    weapon.setSituacao(weaponRequest.getSituacao());
+                    weapon.setPatrimonio(weaponRequest.getPatrimonio());
+                    weapon.setTipo(weaponRequest.getTipo());
+                    weapon.setDistribuicao(weaponRequest.getDistribuicao());
+                    weapon.setPropriedade(weaponRequest.getPropriedade());
+                    weapon.setObservacao(weaponRequest.getObservacao());
+                    weapon.setNumeroSerie(weaponRequest.getNumeroSerie());
+                    weapon.setMarca(weaponRequest.getMarca());
+                    weapon.setModelo(weaponRequest.getModelo());
+                    weapon.setCalibre(weaponRequest.getCalibre());
+                    weapon.setCano(weaponRequest.getCano());
+                    weapon.setRaias(weaponRequest.getRaias());
+                    weapon.setAcabamento(weaponRequest.getAcabamento());
+
 
                     return  responseWeaponMapper.map(weaponRepository.saveAndFlush(weapon));
-
-
                 });
     }
+
 
     @Override
     public Optional<WeaponResponse> get(Long id) {
