@@ -2,15 +2,16 @@
   <img src="https://github.com/hildocosta/hildocosta-Curso-Java--Nelio-Alves/blob/main/logo.png" width="300">
 </p>
 
-<h1 align="center">💡 Projeto de Gestão de Usuários</h1>
+<h1 align="center">💡 Projeto de Gestão de Usuários e Armas</h1>
 
-<p>🚀 Este projeto tem como objetivo fornecer uma API REST para a gestão de usuários, permitindo operações de criação, leitura, atualização e exclusão (CRUD) de usuários. Este projeto é desenvolvido utilizando Spring Boot e JPA.</p>
+<p>🚀 Este projeto tem como objetivo fornecer uma API REST para a gestão de usuários e armas, permitindo operações de criação, leitura, atualização e exclusão (CRUD) de ambos. Este projeto é desenvolvido utilizando Spring Boot e JPA.</p>
 
 <h2 align="center">📝 Sobre o Projeto</h2>
 
-<p>🌟 O sistema permite a gestão de usuários com operações completas de CRUD, sem diferenciação de tipos de usuários ou permissões específicas.</p>
+<p>🌟 O sistema permite a gestão de usuários e armas com operações completas de CRUD.</p>
 
 <h2 align="center">🚀 Vamos Começar</h2>
+
 
 <h3>Pré-requisitos</h3>
 
